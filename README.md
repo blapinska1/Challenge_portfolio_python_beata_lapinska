@@ -9,3 +9,15 @@ Teraz jestem testerką manualną aplikacji mobilnych, ale chciałabym poszerzyć
 Spodziewam się, że dowiem się wielu nowych rzeczy, które pomogą mi rozwijać swoje umiejętności, szczególnie, że z testowaniem automatycznym i z Pythonem nie miałam jeszcze do czynienia.
 
 *Beata*
+
+
+## Podzadanie 2
+N/A
+
+
+## Podzadanie 3
+Wykonano
+
+## Podzadanie 4
+
+Wynik: 13/14
