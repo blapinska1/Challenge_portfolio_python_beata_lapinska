@@ -34,35 +34,34 @@ ZADANIE 2: selektory
 
 * //*[@id="__next"]/form/div/div[1]/h5
 * //*[text()="Scouts Panel"]
-* //*[contains(@class,'MuiFormLabel-root MuiInputLabel')]
+* //*[contains(@class,'MuiTypography-root MuiTypography')]
 
 
-### Login
-* <input type="text" aria-invalid="false" id="login" name="login" value="" class="MuiInputBase-input MuiInput-input">
-
-* //*[@id="__next"]/form/div/div[1]/h5
-* //*[@id="login-label"]
-* //*[text()="Login"]
+### Login_xpath
+* //*[@id='login']
+* //input[@id='login']
+* /input[@name='login']
 
 
-### Password
-<input type="password" aria-invalid="false" id="password" name="password" value="" class="MuiInputBase-input MuiInput-input">
+### Password_xpath
+* //input[@id='password']
+* /input[@name='password']
+* //*[text()="Password"]
+  
 
-* //*[@id="password"]
-* //*[text()="password"]
-* //*[@id="password-label"]
+### Remind_password_button_xpath
+* //*[@id="__next"]/form/div/div[1]/a
+* //*[contains(@class,'MuiTypography-root MuiLink-root')]
+* //*[text()="Remind password"]
 
-### 'Remind password' button
-#__next > form > div > div.MuiCardContent-root > a
-<a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss4 MuiTypography-colorPrimary" tabindex="-1">Remind password</a>
-//*[@id="__next"]/form/div/div[1]/a
 
-### Language selection_EN
-#__next > form > div > div.MuiCardActions-root > div > div
-<div class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input" tabindex="0" role="button" aria-haspopup="listbox">English</div>
-//*[@id="__next"]/form/div/div[2]/div/div
+### Language_selection_EN_xpath
+* //*[@id="__next"]/form/div/div[2]/div/div
+* //*[starts-with(@class,'MuiSelect-root Mui')]
+* //*[contains(@class,'MuiSelect-root')]
 
-### 'Sign in button
-#__next > form > div > div.MuiCardActions-root > button
-<span class="MuiButton-label">Sign in</span>
-//*[@id="__next"]/form/div/div[2]/button
+  
+### Sign_in_button_xpath
+* //*[@id="__next"]/form/div/div[2]/button/span[2]
+* //*[contains(@class,'MuiTouchRipple-root')]
+* //*[starts-with(@class,'MuiTouch')]
