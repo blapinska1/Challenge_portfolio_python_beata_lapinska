@@ -1,6 +1,6 @@
-# TASK 1
-## Subtask 1: konfiguracja oprogramowania.
-### Subtask 1: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?
+# ZADANIE 1
+## Podzadanie 1: konfiguracja oprogramowania.
+### Podzadanie 1: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?
 
 Nazywam się Beata i brałam udział w poprzedniej edycji DARE IT Testowania Manualnego.
 
@@ -15,19 +15,19 @@ Spodziewam się, że dowiem się wielu nowych rzeczy, które pomogą mi rozwija�
 N/A
 
 
-## Subtask 3
+## Podzadanie 3
 Wykonano
 
-## Subtask 4
+## Podzadanie 4
 
 Wynik: 13/14
 
 
-ZADANIE 2: selektory
-## Subtask 1: Zadanie dodatkowe -> Nowy Branch
+# ZADANIE 2: selektory
+
+
 ## Subtask 2: Wyszukiwanie selektorów na stronie logowania. Wymień wszystkie elementy, które znajdują się na stronie logowania.
 
-//*[contains(@type,'sub')]
 
 ### Scouts_Panel_text_xpath
 * //*[@id="__next"]/form/div/div[1]/h5
