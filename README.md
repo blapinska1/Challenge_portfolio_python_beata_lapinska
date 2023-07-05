@@ -30,11 +30,11 @@ ZADANIE 2: selektory
 //*[contains(@type,'sub')]
 
 ### Scouts Panel text
-#__next > form > div > div.MuiCardContent-root > h5
-<h5 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">Scouts Panel</h5>
-//*[@id="__next"]/form/div/div[1]/h5
-//*[text()="Scouts Panel"]
-//*[contains(@class,'MuiTypography-root MuiTypography')]
+* #__next > form > div > div.MuiCardContent-root > h5
+* <h5 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">Scouts Panel</h5>
+* //*[@id="__next"]/form/div/div[1]/h5
+* //*[text()="Scouts Panel"]
+* //*[contains(@class,'MuiTypography-root MuiTypography')]
 
 ### Login textbar
 #login
