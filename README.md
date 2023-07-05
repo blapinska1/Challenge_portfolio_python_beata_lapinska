@@ -1,6 +1,6 @@
 # TASK 1
-## Podzadanie 1: konfiguracja oprogramowania.
-### Podzadanie 1: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?
+## Subtask 1: konfiguracja oprogramowania.
+### Subtask 1: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?
 
 Nazywam się Beata i brałam udział w poprzedniej edycji DARE IT Testowania Manualnego.
 
@@ -15,9 +15,48 @@ Spodziewam się, że dowiem się wielu nowych rzeczy, które pomogą mi rozwija�
 N/A
 
 
-## Podzadanie 3
+## Subtask 3
 Wykonano
 
-## Podzadanie 4
+## Subtask 4
 
 Wynik: 13/14
+
+
+ZADANIE 2: selektory
+## Subtask 1: Zadanie dodatkowe -> Nowy Branch
+## Subtask 2: Wyszukiwanie selektorów na stronie logowania. Wymień wszystkie elementy, które znajdują się na stronie logowania.
+
+//*[contains(@type,'sub')]
+
+### Scouts Panel text
+#__next > form > div > div.MuiCardContent-root > h5
+<h5 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">Scouts Panel</h5>
+//*[@id="__next"]/form/div/div[1]/h5
+//*[text()="Scouts Panel"]
+//*[contains(@class,'MuiTypography-root MuiTypography')]
+
+### Login textbar
+#login
+<input type="text" aria-invalid="false" id="login" name="login" value="" class="MuiInputBase-input MuiInput-input">
+//*[@id="__next"]/form/div/div[1]/h5
+
+### Password textbar
+#password
+<input type="password" aria-invalid="false" id="password" name="password" value="" class="MuiInputBase-input MuiInput-input">
+//*[@id="password"]
+
+### 'Remind password' button
+#__next > form > div > div.MuiCardContent-root > a
+<a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss4 MuiTypography-colorPrimary" tabindex="-1">Remind password</a>
+//*[@id="__next"]/form/div/div[1]/a
+
+### Language selection_EN
+#__next > form > div > div.MuiCardActions-root > div > div
+<div class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input" tabindex="0" role="button" aria-haspopup="listbox">English</div>
+//*[@id="__next"]/form/div/div[2]/div/div
+
+### 'Sign in button
+#__next > form > div > div.MuiCardActions-root > button
+<span class="MuiButton-label">Sign in</span>
+//*[@id="__next"]/form/div/div[2]/button
