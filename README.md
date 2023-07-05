@@ -31,20 +31,26 @@ ZADANIE 2: selektory
 
 ### Scouts Panel text
 * #__next > form > div > div.MuiCardContent-root > h5
-* <h5 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">Scouts Panel</h5>
+
 * //*[@id="__next"]/form/div/div[1]/h5
 * //*[text()="Scouts Panel"]
-* //*[contains(@class,'MuiTypography-root MuiTypography')]
+* //*[contains(@class,'MuiFormLabel-root MuiInputLabel')]
 
-### Login textbar
-#login
-<input type="text" aria-invalid="false" id="login" name="login" value="" class="MuiInputBase-input MuiInput-input">
-//*[@id="__next"]/form/div/div[1]/h5
 
-### Password textbar
-#password
+### Login
+* <input type="text" aria-invalid="false" id="login" name="login" value="" class="MuiInputBase-input MuiInput-input">
+
+* //*[@id="__next"]/form/div/div[1]/h5
+* //*[@id="login-label"]
+* //*[text()="Login"]
+
+
+### Password
 <input type="password" aria-invalid="false" id="password" name="password" value="" class="MuiInputBase-input MuiInput-input">
-//*[@id="password"]
+
+* //*[@id="password"]
+* //*[text()="password"]
+* //*[@id="password-label"]
 
 ### 'Remind password' button
 #__next > form > div > div.MuiCardContent-root > a
