@@ -29,9 +29,7 @@ ZADANIE 2: selektory
 
 //*[contains(@type,'sub')]
 
-### Scouts Panel text
-* #__next > form > div > div.MuiCardContent-root > h5
-
+### Scouts_Panel_text_xpath
 * //*[@id="__next"]/form/div/div[1]/h5
 * //*[text()="Scouts Panel"]
 * //*[contains(@class,'MuiTypography-root MuiTypography')]
