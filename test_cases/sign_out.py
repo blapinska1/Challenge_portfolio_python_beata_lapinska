@@ -29,6 +29,8 @@ class TestLoginPage(unittest.TestCase):
         user_login.click_login()
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()
+        dashboard_page.click_on_sign_out()
+        time.sleep(5)
 
     @classmethod
     def tearDown(self):

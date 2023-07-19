@@ -63,3 +63,7 @@ Wynik: 13/14
 * //*[@id="__next"]/form/div/div[2]/button/span[2]
 * //*[contains(@class,'MuiTouchRipple-root')]
 * //*[starts-with(@class,'MuiTouch')]
+
+# ZADANIE 4: Refactor, debugger i przypadki testowe
+
+https://drive.google.com/drive/folders/1RNM5Z-sf6Xb0UTSZcAadY2o99Ok01DDx?usp=drive_link

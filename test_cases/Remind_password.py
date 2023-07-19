@@ -22,14 +22,10 @@ class TestLoginPage(unittest.TestCase):
 
     def test_log_in_to_the_system(self):
         user_login = LoginPage(self.driver)
-        user_login.assert_scout_panel_text()
-        user_login.title_of_page()
-        user_login.type_in_email('user01@getnada.com')
-        user_login.type_in_password('Test-1234')
-        user_login.click_login()
-        dashboard_page = Dashboard(self.driver)
-        dashboard_page.title_of_page()
-
+        user_login.click_remind_password()
+        user_login.type_in_remind_email('blapinska@gmail.com')
+        user_login.click_remind_send()
+        time.sleep(5)
     @classmethod
     def tearDown(self):
         self.driver.quit()
