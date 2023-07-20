@@ -9,7 +9,7 @@ from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestLoginPage(unittest.TestCase):
+class TestLoginIncorrect(unittest.TestCase):
 # user01@getnada.com pass: Test-1234
     @classmethod
     def setUp(self):
@@ -20,7 +20,7 @@ class TestLoginPage(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_log_in_to_the_system(self):
+    def test_log_in_with_incorrect_password(self):
         user_login = LoginPage(self.driver)
         user_login.type_in_email('user01@getnada.com')
         user_login.type_in_password('abcd')
