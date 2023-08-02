@@ -17,7 +17,8 @@ class TestFillAddPLayer(unittest.TestCase):
         os.chmod(DRIVER_PATH, 755)
         self.driver_service = Service(executable_path=DRIVER_PATH)
         self.driver = webdriver.Chrome(service=self.driver_service)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
+        self.driver.get('https://scouts-test.futbolkolektyw.pl/')
+        # self.driver.get('https://dareit.futbolkolektyw.pl/')
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
@@ -27,7 +28,6 @@ class TestFillAddPLayer(unittest.TestCase):
         user_login.type_in_email('user01@getnada.com')
         user_login.type_in_password('Test-1234')
         user_login.click_login()
-
         # dashboard_page = Dashboard(self.driver)
         # dashboard_page.title_of_page()
 
@@ -44,8 +44,8 @@ class TestFillAddPLayer(unittest.TestCase):
         add_player.click_left_leg()
         # add_player.click_right_leg()
         add_player.click_submit()
-
-        time.sleep(5)
+        add_player.player_added_confirmation()
+        # time.sleep(5)
 
     @classmethod
     def tearDown(self):

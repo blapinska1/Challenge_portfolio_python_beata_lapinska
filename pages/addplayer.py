@@ -1,10 +1,13 @@
+import time
+
 from pages.base_page import BasePage
 
 
 class AddPlayer(BasePage):
     Add_player_xpath = "//*[text()='Add player']"
     expected_title = "Add player"
-    add_player_url = "https://scouts-test.futbolkolektyw.pl/en/players/add/"
+    expected_title_added = "Edit player [] []"
+    add_player_url = "https://dareit.futbolkolektyw.pl/players/add/"
     add_player_name = "//*[@name='name']"
     add_player_last_name = "//*[@name='surname']"
     add_player_birth_date = "//*[@name='age']"
@@ -14,6 +17,9 @@ class AddPlayer(BasePage):
     add_player_left_leg = "//*[text()='Left leg']"
     add_player_submit_button = "//*[text()= 'Submit']"
     players_xpath = "//*[text()= 'Players']"
+    added_player_matches_xpath = "//*[text()='Matches']"
+    added_player_notification_xpath = "//*[text()='Added player.']"
+    expected_matches = "Matches"
 
     def click_on_add_player(self):
         self.wait_for_element_to_be_clickable(self.Add_player_xpath)
@@ -54,7 +60,12 @@ class AddPlayer(BasePage):
     def click_players(self):
         self.click_on_the_element(self.players_xpath)
 
-
+    def player_added_confirmation(self):
+        try:
+            self.wait_for_visibility_of_element_located(self.added_player_notification_xpath)
+        except:
+            print("Could not add player")
+            assert False
 
 
 pass

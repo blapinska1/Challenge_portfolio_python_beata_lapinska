@@ -9,7 +9,7 @@ class LoginPage(BasePage):
     remind_email_xpath = "//*[@name='email']"
     remind_send_button = "//*[text()= 'Send']"
     scouts_panel_xpath = "//*[text()= 'Scouts Panel']"
-    login_url = 'https://scouts-test.futbolkolektyw.pl/en/'
+    login_url = 'https://dareit.futbolkolektyw.pl/'
     expected_title = "Scouts panel - sign in"
     expected_text = "Scouts Panel"
     no_credential_xpath = "//*[text()='Please provide your username or your e-mail.']"
@@ -46,3 +46,11 @@ class LoginPage(BasePage):
 
     def click_remind_send(self):
         self.click_on_the_element(self.remind_send_button)
+
+    def sign_out_assert(self):
+        try:
+            # assert self.get_page_title(self.login_url) == self.expected_title
+            self.wait_for_element_to_be_clickable(self.sign_in_button_xpath)
+        except:
+            print("Couldnt sign out")
+            assert False
